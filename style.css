@@ -247,10 +247,22 @@ section h2 em {
 /* ============ TEAM — dossier plates ============ */
 .team {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2px;
     background: var(--hairline);
     border: 1px solid var(--hairline);
+}
+
+@media (max-width: 780px) {
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 460px) {
+    .team {
+        grid-template-columns: 1fr;
+    }
 }
 
 .member {
