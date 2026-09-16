@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bones and Bolters — Kill Team</title>
+    <meta name="description" content="Bones and Bolters — a local Kill Team group. Meet the crew and check upcoming games and tournaments.">
+    <link rel="icon" href="assets/logo-black.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="#team">The Crew</a>
+    <a href="#events">Campaign Calendar</a>
+</nav>
+
+<header class="hero">
+    <div class="hero-inner">
+        <img class="hero-crest" src="assets/logo-white.png" alt="Bones and Bolters crest — a crowned skull">
+        <h1>Bones and Bolters</h1>
+        <div class="sigil-line">
+            <span class="rule"></span>
+            <span class="hero-tagline">Kill Team Collective</span>
+            <span class="rule right"></span>
+        </div>
+        <p class="hero-sub">Casual games. Local tournaments. Canny crew.</p>
+    </div>
+</header>
+
+<section id="team">
+    <div class="section-head">
+        <span class="kicker">Command Roster</span>
+        <h2>Meet <em>the Crew</em></h2>
+        <p class="lede">The ones who keep the terrain stacked, the missions fair, and the dice honest.</p>
+    </div>
+
+    <div class="team">
+
+        <div class="member">
+            <div class="photo-wrap">
+                <img src="assets/breandan.jpg" alt="Breandan">
+            </div>
+            <span class="rank-tag">Founder</span>
+            <h3>Breandan</h3>
+            <p class="role">Organizer Guy</p>
+        </div>
+
+        <div class="member">
+            <div class="photo-wrap">
+                <img src="assets/david.jpeg" alt="David">
+            </div>
+            <span class="rank-tag">Infrastructure</span>
+            <h3>David</h3>
+            <p class="role">Tech Guy</p>
+        </div>
+
+        <div class="member">
+            <div class="photo-wrap">
+                <div class="no-photo">
+                    <img src="assets/logo-white.png" alt="" aria-hidden="true">
+                </div>
+            </div>
+            <span class="rank-tag">Rules Cadre</span>
+            <h3>Kev</h3>
+            <p class="role">Rules Guy</p>
+        </div>
+
+        <div class="member">
+            <div class="photo-wrap">
+                <div class="no-photo">
+                    <img src="assets/logo-white.png" alt="" aria-hidden="true">
+                </div>
+            </div>
+            <span class="rank-tag">Visual Corps</span>
+            <h3>Harry</h3>
+            <p class="role">Art Guy</p>
+        </div>
+
+        <div class="member">
+            <div class="photo-wrap">
+                <div class="no-photo">
+                    <img src="assets/logo-white.png" alt="" aria-hidden="true">
+                </div>
+            </div>
+            <span class="rank-tag">Rules Cadre</span>
+            <h3>Thomas</h3>
+            <p class="role">Rules Expert</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="events">
+    <div class="section-head">
+        <span class="kicker">The Ledger</span>
+        <h2>Upcoming <em>Events</em></h2>
+        <p class="lede">Bring a painted team, a rules question, or just yourself.</p>
+    </div>
+
+    <div class="filters">
+        <button class="active" onclick="filterEvents('all', this)">All</button>
+        <button onclick="filterEvents('casual', this)">Casual</button>
+        <button onclick="filterEvents('tournament', this)">Tournament</button>
+    </div>
+
+    <div class="events">
+
+        <div class="event-card" data-type="casual">
+            <span class="event-date">April 5</span>
+            <div>
+                <h3>Casual Game Night</h3>
+                <span class="event-loc">Bones Club</span>
+                <p class="desc">Bring your Kill Team and play friendly matches. All skill levels welcome.</p>
+            </div>
+            <span class="tag">Casual</span>
+        </div>
+
+        <div class="event-card" data-type="tournament">
+            <span class="event-date">April 20</span>
+            <div>
+                <h3>Mini Tournament</h3>
+                <span class="event-loc">Bones Club</span>
+                <p class="desc">Three rounds, one victor. Prizes for the top players.</p>
+            </div>
+            <span class="tag">Tournament</span>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <img class="foot-mark" src="assets/logo-white.png" alt="Bones and Bolters">
+    <p>© 2026 Bones and Bolters — Local Kill Team Group</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
