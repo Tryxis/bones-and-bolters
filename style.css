@@ -253,15 +253,75 @@ section h2 em {
     border: 1px solid var(--hairline);
 }
 
+.team-dots {
+    display: none;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 22px;
+}
+
+.team-dots button {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid var(--rose-deep);
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.team-dots button.active {
+    background: var(--rose);
+    border-color: var(--rose);
+    transform: scale(1.2);
+}
+
+.team-hint {
+    display: none;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--bone-dim);
+    margin-top: -34px;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 780px) {
     .team {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        grid-template-columns: initial;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .team::-webkit-scrollbar {
+        display: none;
+    }
+
+    .member {
+        flex: 0 0 76%;
+        scroll-snap-align: center;
+    }
+
+    .team-dots {
+        display: flex;
+    }
+
+    .team-hint {
+        display: block;
     }
 }
 
 @media (max-width: 460px) {
-    .team {
-        grid-template-columns: 1fr;
+    .member {
+        flex: 0 0 86%;
     }
 }
 
